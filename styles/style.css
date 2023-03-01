@@ -1,0 +1,100 @@
+/* RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Bebas Neue;
+    src: url(C:\Users\57267874800\Desktop\code\LandingPage\assets\Bebas_Neue,Courier_Prime\Bebas_Neue\BebasNeue-Regular.ttf);
+}
+
+@font-face {
+    font-family: Courier Prime;
+    src: url(C:\Users\57267874800\Desktop\code\LandingPage\assets\Bebas_Neue,Courier_Prime\Courier_Prime\CourierPrime-Regular.ttf);
+}
+
+.container-grid {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* BODY */
+
+body{
+    background-color: #080324;
+}
+
+/* HEADER */
+
+header {
+    background-color: #f9003d;
+}
+
+.header-flex {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 60px;
+}
+
+
+header div {
+    
+}
+
+header div nav {
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+}
+
+header div nav a {
+    color: white;
+    /* margin-left: 70px;
+    margin-right: 70px; */
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+/* BANNER */
+
+#banner-img {
+    width: 100%;
+    z-index:-1;
+}
+
+.main-banner{
+    position: relative;
+}
+
+.section-banner {
+    position: absolute;
+    top: 25%;
+    left: 15%;
+    color: white;
+    z-index: 2;
+}
+
+h1 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 96px;
+    color: white;
+    border-bottom: 1px solid #ffaf00;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    text-decoration: none;
+}
+
+h3{
+    font-family: 'Courier Prime', monospace;
+    color: #F9003D;
+    font-size: 53px;
+    text-transform: uppercase;
+}
+
