@@ -61,6 +61,10 @@ header div nav a:hover {
     text-shadow: 5px 5px 15px white;
 }
 
+#menu-mobile {
+    display: none;
+}
+
 /* BANNER */
 
 .main-banner {
@@ -263,3 +267,22 @@ footer {
     height: 80px;
     background-color: #F9003D;
 }
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 767px) {
+
+    #links-header {
+
+        display: none;
+
+    }
+
+    #menu-mobile {
+        display: initial;
+    }
+
+}
+
+@media screen and (max-width: 991px) {}
