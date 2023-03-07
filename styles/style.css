@@ -30,6 +30,7 @@ body {
 /* HEADER */
 
 header {
+
     background-color: #f9003d;
 }
 
@@ -43,9 +44,9 @@ header {
 
 header div nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 
-    width: 600px;
+    width: 50%;
 }
 
 header div nav a {
@@ -54,7 +55,7 @@ header div nav a {
     text-decoration: none;
     font-size: 18px;
     font-family: 'Bebas Neue', cursive;
-    text-shadow: 1px 0px 5px rgb(184, 0, 0);
+    padding: 20px 25px;
 }
 
 header div nav a:hover {
@@ -231,6 +232,7 @@ h4 {
     padding-bottom: 130px;
 }
 
+
 .box-endereco {
     width: 900px;
     height: 175px;
@@ -273,16 +275,49 @@ footer {
 
 @media screen and (max-width: 767px) {
 
-    #links-header {
+    /* ALTERAÇÕES TEMPORÁRIAS */
 
-        display: none;
+    main {
+        /* display: none; */
+    }
+
+
+    /* header {
+
+        display: block;
+
+    } */
+
+    header nav {
+
+        position: fixed;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        width: 80vw !important;
+        left: -80vw;
+        top: 0;
+        margin-top: 60px;
+        height: calc(100vh - 60px);
+        background-color: #F9003d;
+        z-index: 100;
+        opacity: 0;
+
+        transition: left 0.4s cubic-bezier(0,.92,.25,1), opacity 0.4s cubic-bezier(0,.92,.25,1);
 
     }
 
-    #menu-mobile {
-        display: initial;
+
+
+    .abrirMenu {
+        
+        left: 0;
+        opacity: 1;
+
+    }
+
+    header #menu-mobile {
+        display: block;
     }
 
 }
-
-@media screen and (max-width: 991px) {}
