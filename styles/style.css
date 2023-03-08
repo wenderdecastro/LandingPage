@@ -109,7 +109,7 @@ h1 {
 h3 {
     font-family: 'Courier New', Courier, monospace;
     color: #F9003D;
-    font-size: 53.2px;
+    font-size: 53px;
     text-transform: uppercase;
     font-weight: 700;
 }
@@ -281,6 +281,22 @@ footer {
         /* display: none; */
     }
 
+    /* #section-sobre {
+        display: none;
+    }
+
+    #section-endereço {
+        display: none;
+    }
+
+    #section-info {
+        display: none;
+    }
+
+    footer {
+        display: none;
+    } */
+
 
     /* header {
 
@@ -303,14 +319,12 @@ footer {
         z-index: 100;
         opacity: 0;
 
-        transition: left 0.4s cubic-bezier(0,.92,.25,1), opacity 0.4s cubic-bezier(0,.92,.25,1);
+        transition: left 0.55s cubic-bezier(0, .92, .25, 1), opacity 0.6s cubic-bezier(0, .92, .25, 1);
 
     }
 
-
-
     .abrirMenu {
-        
+
         left: 0;
         opacity: 1;
 
@@ -318,6 +332,42 @@ footer {
 
     header #menu-mobile {
         display: block;
+    }
+
+
+
+    #layout-banner {
+
+        height: 640px;
+        justify-content: flex-start;
+        padding-top: 0px;
+        width: 100vh;
+
+    }
+
+    #mouse {
+        display: none;
+    }
+
+    .section-banner {
+
+        display: flex;
+        flex-direction: column;
+        padding-left: 30px;
+        /* justify-content: center;
+        align-items: center; */
+
+    }
+
+    h1 {
+        font-size: 40px;
+        line-height: normal;
+        border: none;
+    }
+
+    h3 {
+        font-size: 48px;
+        width: 300px;
     }
 
 }
